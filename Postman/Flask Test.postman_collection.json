@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "29e8816e-68fd-4682-ab42-a2ed54f02e67",
+		"name": "Flask Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26532064"
+	},
+	"item": [
+		{
+			"name": "GetRequest",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"host": true,
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true,
+					"content-length": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3OTk0MjMxOCwianRpIjoiMDQ0NDFiODctODFiNy00NmE3LWE3OWYtYmUwZDViZTcwMTM4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY0MjFlMmEwYjk1ZDQxOGQ3NGY5NThjNCIsIm5iZiI6MTY3OTk0MjMxOCwiZXhwIjoxNjgwNTQ3MTE4fQ.jSsgNsYuLn_3CFSVh8xduZch0391UxZmy2ZxiHyXr1w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/movies/6421e2e3b95d418d74f958c7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"6421e2e3b95d418d74f958c7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostInsert",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4MDI4ODU2NiwianRpIjoiNjg2ZjEwZGEtNGU2Zi00MzRiLWE3ZjItNTI1YWJjYzc2ZTQ1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY0MjcyYjJlNWI0YzY5NzAxNTM1NmFmZCIsIm5iZiI6MTY4MDI4ODU2NiwiZXhwIjoxNjgwODkzMzY2fQ.KOF1BThrNWUgiG7u7Z4r8IjJEjgNAqcLgCXnYn4qsVM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"The Shawshank Redemption\",\n        \"casts\": [\"Tim Robbins\", \"Morgan Freeman\", \"Bob Gunton\", \"William Sadler\"],\n        \"genres\": [\"Drama\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostInsert2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4MDI4ODU2NiwianRpIjoiNjg2ZjEwZGEtNGU2Zi00MzRiLWE3ZjItNTI1YWJjYzc2ZTQ1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY0MjcyYjJlNWI0YzY5NzAxNTM1NmFmZCIsIm5iZiI6MTY4MDI4ODU2NiwiZXhwIjoxNjgwODkzMzY2fQ.KOF1BThrNWUgiG7u7Z4r8IjJEjgNAqcLgCXnYn4qsVM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"The Godfather \",\n    \"casts\": [\"Marlon Brando\", \"Al Pacino\", \"James Caan\", \"Diane Keaton\"],\n    \"genres\": [\"Crime\", \"Drama\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostInsert3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4MDI4ODU2NiwianRpIjoiNjg2ZjEwZGEtNGU2Zi00MzRiLWE3ZjItNTI1YWJjYzc2ZTQ1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY0MjcyYjJlNWI0YzY5NzAxNTM1NmFmZCIsIm5iZiI6MTY4MDI4ODU2NiwiZXhwIjoxNjgwODkzMzY2fQ.KOF1BThrNWUgiG7u7Z4r8IjJEjgNAqcLgCXnYn4qsVM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"The Dark Knight 116\",\n    \"casts\": [\n        \"Christian Bale\",\n        \"Heath Ledger\",\n        \"Aaron Eckhart\",\n        \"Michael Caine\"\n    ],\n    \"genres\": [\n        \"Action\",\n        \"Crime\",\n        \"Drama\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateARecord",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3OTk0MjMxOCwianRpIjoiMDQ0NDFiODctODFiNy00NmE3LWE3OWYtYmUwZDViZTcwMTM4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY0MjFlMmEwYjk1ZDQxOGQ3NGY5NThjNCIsIm5iZiI6MTY3OTk0MjMxOCwiZXhwIjoxNjgwNTQ3MTE4fQ.jSsgNsYuLn_3CFSVh8xduZch0391UxZmy2ZxiHyXr1w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"name\": \"The Dark Knight 4\",\n    \"casts\": [\"Christian Bale\", \"Heath Ledger\", \"Aaron Eckhart\", \"Michael Caine\"],\n    \"genres\": [\"Action\", \"Crime\", \"Drama\"]\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movies/6421e58ea4367dd8aa5a6823",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"6421e58ea4367dd8aa5a6823"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"yingda.guo@capgemini.com\",\n    \"password\":\"myfunkpasswork\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GenerageJWT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"yingda.guo@capgemini.com\",\n    \"password\":\"myfunkpasswork\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Duplicated User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"yingda.guo@capgemini.com\",\n    \"password\":\"myfunkpasswork\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ForgetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"yingda.guo@capgemini.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/forgot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"forgot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ResetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\":\"mynewcoolpassword\",\n    \"reset_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4MDA5NTg4NSwianRpIjoiYTlmMDFmOWItMmRiMi00OTc4LTg5YzItNjUyNjAxNDA2ODYyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY0MjFlMmEwYjk1ZDQxOGQ3NGY5NThjNCIsIm5iZiI6MTY4MDA5NTg4NSwiZXhwIjoxNjgwMTgyMjg1fQ.-eGD0a-a4lBGnKQFyM3dZiT1k7QTZzBY4JyNX3kgiTE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/reset",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
